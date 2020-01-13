@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Lu...</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+  
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script>
+  
+    
+  $(document).ready(function(){//使用JQ語法，JQ ready的function是必要的
+    $(function(){ $('#A1').click(function(){ //點擊此選擇器
+        $('html,body').animate({scrollTop:$('#content').offset().top-100 }, 'slow'); //滑到此區
+        });  
+    }); 
+});
+
+$(document).ready(function(){//使用JQ語法，JQ ready的function是必要的
+    $(function(){ $('#A2').click(function(){ 
+        $('html,body').animate({scrollTop:$('#content2').offset().top -100}, 'slow'); 
+        });  
+    }); 
+});
+
+
+$(document).ready(function(){//使用JQ語法，JQ ready的function是必要的
+    $(function(){ $('#A3').click(function(){ 
+        $('html,body').animate({scrollTop:$('#content3').offset().top -100}, 'slow'); 
+        });  
+    }); 
+});
+
+
+$(document).ready(function(){//使用JQ語法，JQ ready的function是必要的
+    $(function(){ $('#A4').click(function(){ 
+        $('html,body').animate({scrollTop:$('#content4').offset().top -100}, 'slow'); 
+        });  
+    }); 
+});
+
+$(function() {
+          $(window).scroll(function() {
+            if ($(this).scrollTop() > 0)  {          /* 要滑動到選單的距離 */
+               $('#menu1').addClass('navFixed');   /* 幫選單加上固定效果 */
+        
+           
+              
+            } else {
+              $('#menu1').removeClass('navFixed'); /* 移除選單固定效果 */
+             
+            }
+          });
+        });
+ 
+    </script>
+
+<style>
+  .navFixed {
+     
+   z-index: 10;         
+     position: fixed;      
+     top: 0;
+     left: 0;
+     margin-top: 0;
+     min-width: 100%;
+     /* opacity: 0.94; */
+     transition: opacity .5s ease-out; 
+    background: #caa488; 
+
+       
+   }
+
+   .navFixed #logoo1{
+display: inline-block !important;
+   }
+
+
+
+   #logoo1 {
+    display: none !important;
+}
+
+
+
+
+
+
+ 
+</style>
+<script type="text/javascript">
+
+
+    $(function() {
+
+        /* 按下GoTop按鈕時的事件 */
+        $('#gotop').click(function(){
+            $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+            return false;
+        });
+        
+        /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+        $(window).scroll(function() {
+            if ( $(this).scrollTop() > 400 ||  document.documentElement.scrollTop > 20 || document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+                $('#gotop').fadeIn();
+            } else {
+                $('#gotop').fadeOut();
+            }
+        });
+    });
+
+  
+
+
+    </script> 
+
+
+
+
+
+
+ 
+</head>
+
+
+<body>
+
+   
+            
+<header class="header">
+  
+
+   <div class="container "> 
+   <div>
+    <div class="col-12 logo11" id="LG1">
+         <a href="index.html"><img src="img/logo1.png" alt="" ></a>
+      
+    </div>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark main-list" id="menu1" >
+  
+ 
+      
+        <a class="navbar-brand" href="index.html" style="font-size:30px" id="logoo1" > 
+            <img src="./img/LULOHG.png" alt="" width="50" height="50">
+            About LU</a>   
+            
+   
+      
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: auto; background: rgb(173, 129, 99); ">
+            <span class="navbar-toggler-icon" ></span>
+        </button>
+           
+       
+
+  <div class="collapse navbar-collapse  navbar-collapse-center" id="navbarSupportedContent"  >
+                
+            <ul class="navbar-nav mr-auto navbar-center" style="margin-left: auto;" >
+                <li class="nav-item active" id="A1">
+                    <a class="nav-link " href="#content" style="color: #9a7153;"><i class="fas fa-home"></i> 自介經歷  <span
+                            class="sr-only">(current)</span></a>
+                </li>
+               
+                <li class="nav-item" id="A2">
+                    <a class="nav-link aaa" href="#content2" style="color: #9a7153;"><i class="fas fa-paint-brush"></i> 平面設計 <span
+                        class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" id="A3">
+                    <a class="nav-link" href="#content3" style="color: #9a7153;"><i class="fas fa-palette"></i> 手繪電繪設計</a>
+                </li>
+                <li class="nav-item" id="A4">
+                    <a class="nav-link" href="#content4" style="color: #9a7153;"><i class="fas fa-magic"></i></i> 網頁</a>
+                </li>
+       
+            </ul>
+</div>
+  
+</div>
+              
+</div>
+</nav>
+
+
+
+</div></header> 
+
+
+
+
+<!-- <div class="container my-3"> 
+    <div class="row">
+         <div class="col-12"> */-->
+
+            
+   
+  
+              <div id="carouselExampleIndicators md-full-banner ca11" class="carousel slide" data-ride="carousel" >
+        
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/BKLU.jpg" class="d-block w-100" alt="...">
+                  </div>
+             
+            
+              </div>
+
+
+
+        <div class="col-12 bounceIn wow" style="background: rgb(116, 78, 45);" >
+            <br>
+                <h1 class="text-white text-center">~歡迎~</h1>
+                <br>
+            
+        </div>
+
+
+<div class="container my-5" id="content" >
+    
+    <div class="row my-3">
+        <hr class="bg-white"> 
+        <div class="col-12 col-lg-5" data-wow-delay="0" >
+            
+            <img src="./img/IMG_1180.JPG" alt="" class="w-100 h-100" >
+        </div>
+        <div class="col-12 col-lg-7 text-white align-self-center my-3" >
+            <h1 style="color:rgb(143, 91, 23); text-shadow:0px 0px 5px rgb(255, 255, 255)"><i class="fab fa-gratipay"></i>自介 經歷</h1>
+            <hr>
+            <p style="color: rgb(128, 92, 60);">名:盧品含 </p>
+          
+                <p style="color: rgb(128, 92, 60);">生日:04/18</p>
+                <p style="color: rgb(128, 92, 60);">技能:Photoshop, Illustorter, HTML, CSS, JavaScript, JQuery, Flash, DreamWeaver</p>
+                
+        </div>
+
+
+    <div class="rotate-box-1-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 ">
+                    <a href="#" class="rotate-box-1 square-icon wow fadeIn " data-wow-delay="0" style="text-decoration:none;">
+                        <span class="rotate-box-icon" style="color: rgb(128, 92, 60); "><i class="fa fa-heart"></i></i></span>
+                        <div class="rotate-box-info" style="color: rgb(116, 78, 45); ">
+                            <h4>靜宜大學 蓋夏圖書館 參考組</h4>
+                            <p>負責FB粉絲專業美編、文獻掃描、館際合作</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 ">
+                    <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="0.2s" style="text-decoration:none;">
+                        <span class="rotate-box-icon" style="color: rgb(150, 121, 95); "><i class="fa fa-heart"></i></i></span>
+                        <div class="rotate-box-info" style="color: rgb(150, 121, 95); ">
+                            <h4>靜宜大學 文書組</h4>
+                            <p>文書處理/掃描、公文系統維修</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 ">
+                    <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="0.4s" style="text-decoration:none;">
+                        <span class="rotate-box-icon" style="color: rgb(150, 121, 95); "><i class="fa fa-heart"></i></span>
+                        <div class="rotate-box-info" style="color: rgb(150, 121, 95); ">
+                            <h4>永晉國際有限公司</h4>
+                            <p>擔任美編海報文宣設計、業務文書處理、報價、工廠廠商聯繫、開發業務</p>
+                        </div>
+                    </a>
+                </div>
+                
+               
+                
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div>
+
+ 
+
+
+<!-- 第2區 -->
+
+
+
+    <div class="col-12 bounceIn wow" style="background: rgb(116, 78, 45);" >
+        <br>
+            <h1 class="text-white text-center" id="content2">-平面設計-</h1>
+            <br>
+        
+    </div>
+
+        
+    </div>
+
+
+<div class="container my-5" id="content">
+        <div class="row my-6">
+           
+            <div class="col-12 col-lg-6 fadeIn animation-delay:0.8s; img_div" id="B1">
+                <img src="./img/CC1.jpg" alt="" class="w-100 h-100">
+                <a href="#">
+                        <!-- 遮罩的東西 -->
+                        <div class="mask "> 
+                                <h3>調整色調濾色</h3>
+                                <p>By Photoshop</p>
+                            </div>
+                    </a>
+            </div>
+            <div class="col-12 col-lg-6 fadeIn animation-delay: 0.2s; img_div" id="B2">
+                    <img src="./img/IMG_9490.JPG" alt="" class="w-100 h-100">
+                    <a href="#">
+                        <!-- 遮罩的東西 -->
+                        <div class="mask"> 
+                                <h3>調整色調濾色</h3>
+                                <p>By Photoshop</p>
+                            </div>
+                    </a>
+                </div>
+        </div>
+
+    </div>
+    <div class="container my-5" >
+            <div class="row my-6">
+                <div class="col-12 col-lg-6 fadeInLeft wow img_div" id="B3">
+                    <img src="./img/m3.JPG" alt="" class="w-100 h-100">
+                    <a href="#">
+                        <!-- 遮罩的東西 -->
+                        <div class="mask"> 
+                                <h3>商品簡介設計</h3>
+                                <p>By Photoshop</p>
+                            </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-6 fadeInLeft wow img_div" id="B4">
+                        <img src="./img/NY1.jpg" alt="" class="w-100 h-100">
+                        <a href="#">
+                            <!-- 遮罩的東西 -->
+                            <div class="mask"> 
+                                    <h3>商品簡介設計</h3>
+                                    <p>By Photoshop</p>
+                                </div>
+                        </a>
+                    </div>
+            </div>
+    
+        </div>
+        <div class="container my-5" >
+            <div class="row my-6">
+                <div class="col-12 col-lg-6 fadeInLeft wow img_div" id="B5">
+                    <img src="./img/post.jpg" alt="" class="w-100 h-100">
+                    <a href="#">
+                        <!-- 遮罩的東西 -->
+                        <div class="mask"> 
+                                <h3>活動海報</h3>
+                                <p>By Photoshop</p>
+                            </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-6 fadeInLeft wow img_div" id="B5">
+                        <img src="./img/post2.jpg" alt="" class="w-100 h-100">
+                        <a href="#">
+                            <!-- 遮罩的東西 -->
+                            <div class="mask"> 
+                                    <h3>活動海報</h3>
+                                    <p>By Photoshop</p>
+                                </div>
+                        </a>
+                    </div>
+            </div>
+    
+        </div>
+
+<!-- 第三區 -->
+
+<div class="col-12 bounceIn wow" style="background: rgb(116, 78, 45);" >
+    <br>
+        <h1 class="text-white text-center" id="content3">-手繪電繪-</h1>
+        <br>
+    
+</div>
+
+<div class="container my-5" id="content">
+    <div class="row my-6">
+       
+        <div class="col-12 col-lg-6 fadeInLeft wow img_div" id="C1">
+            <img src="./img/0903.jpg" alt="" class="w-100 h-100">
+            <a href="#">
+                    <!-- 遮罩的東西 -->
+                    <div class="mask"> 
+                            <h3>貓咪繪圖</h3>
+                            <p>By AI</p>
+                        </div>
+                </a>
+        </div>
+        <div class="col-12 col-lg-6 fadeInLeft wow img_div" id="C2">
+                <img src="./img/1213.png" alt="" class="w-100 h-100">
+                <a href="#">
+                    <!-- 遮罩的東西 -->
+                    <div class="mask"> 
+                            <h3>聖誕系列</h3>
+                            <p>By AI</p>
+                        </div>
+                </a>
+            </div>
+    </div>
+
+</div>
+
+
+<!-- 第四區 <div class="container my-5" style="margin: auto;"  >
+    <div class="row">
+        <div class="col-12 bounceIn">
+            <br><br><br>
+             <h1 class="text-white text-center "  id="content4"></i> -網頁設計-</i></h1> 
+             <hr class="bg-white">
+        </div>
+    </div>
+</div>-->
+
+
+
+
+<div class="col-12 bounceIn wow" style="background: rgb(116, 78, 45);" >
+    <br>
+        <h1 class="text-white text-center" id="content4">-網頁設計-</h1>
+        <br>
+    
+</div>
+
+<div class="container my-5" id="content">
+    <div class="row my-6">
+       
+        <div class="col-12 col-lg-6 fadeInLeft wow img_div" id="C1">
+            <img src="./img/DW.PNG" alt="" class="w-100 h-100">
+            <a href="https://april3031a.github.io/coffee/index.html" id="mask">
+                    <!-- 遮罩的東西 -->
+                    <div class="mask"> 
+                            <h3>網頁設計/練習</h3>
+                            <p>By VScode</p>
+                          
+                        </div>
+                </a>
+        </div>
+        <div class="col-12 col-lg-6 fadeInLeft wow img_div" id="C2">
+                <img src="./img/DW2.PNG" alt="" class="w-100 h-100">
+                <a href="http://kompsi.net/" id="mask">
+                    <!-- 遮罩的東西 -->
+                    <div class="mask"> 
+                            <h3>網頁設計/廠商網頁</h3>
+                            <p>By VScode</p>
+                          
+                        </div>
+                </a>
+            </div>
+    </div>
+
+</div>
+
+</div>
+
+
+<!-- 底部 -->
+   <!-- test -->
+
+
+
+
+
+
+<a href="index.html" id="gotop">
+    <i class="fa fa-angle-up"></i>
+ </a>
+
+<!-- test -->
+
+
+<div class="container-fluid" id="footer" style="background-color: #8d5831; ">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 align-self-center">
+                <h1 class="text-white text-center" style="font-size: 20px">&copy;2019 About Lu</h1>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<scrip src="http://code.jquery.com/jquery-3.3.1.js"></scrip>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+<script src="./js/wow.min.js"></script>
+<!-- 要加入wow效果，須先加入此行 -->
+<script>
+    new WOW().init();
+</script>
+
+
+
+</body>
+
+</html>
