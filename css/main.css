@@ -17,6 +17,29 @@ p{
     font-size: 18px;
 }
 /* test */
+.header .navFixed {
+     
+            z-index: 10;         
+              position: fixed;      
+              top: 0;
+              left: 0;
+              margin-top: 0;
+              min-width: 100%;
+              /* opacity: 0.94; */
+              transition: opacity .5s ease-out; 
+             background: #caa488; 
+         
+                
+ }
+         
+.navFixed #logoo1{
+display: inline-block !important;}
+         
+         
+#logoo1 {
+ display: none !important;
+ }
+
 .header {
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -340,29 +363,4 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
         display:none}}
         
         
-        .header .navFixed {
-     
-            z-index: 10;         
-              position: fixed;      
-              top: 0;
-              left: 0;
-              margin-top: 0;
-              min-width: 100%;
-              /* opacity: 0.94; */
-              transition: opacity .5s ease-out; 
-             background: #caa488; 
-         
-                
-            }
-         
-            .navFixed #logoo1{
-         display: inline-block !important;
-            }
-         
-         
-         
-            #logoo1 {
-             display: none !important;
-         }
-         
-         
+      
