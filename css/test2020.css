@@ -74,7 +74,6 @@ display: none;
 }
 
 
-@media only screen and (max-width: 767px) {
 .mask-info__link h3{
     font-size: 15px;
 }
